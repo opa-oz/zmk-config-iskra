@@ -2,11 +2,12 @@ name: Iskra
 url: https://example.local/iskra
 maintainers:
   - VostokLabs
+requires: [pro_micro]
 features:
   - keys
 matrix:
   rows: 2
   cols: 4
   diode_direction: COL2ROW
-microcontroller: nrf52840
+# microcontroller: nrf52840
 board: nice_nano_v2

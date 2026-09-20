@@ -1,2 +1,3 @@
 config SHIELD_ISKRA
 	def_bool $(shields_list_contains,iskra)
+    depends on ARDUINO_PRO_MICRO
