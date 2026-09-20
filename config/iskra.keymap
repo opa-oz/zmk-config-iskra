@@ -10,7 +10,7 @@
 			display-name = "Base";
 			bindings = <
 				&kp N1  &kp N2  &kp N3 &kp N4
-				&kp N5  &kp N6  &kp N7  &kp SPACE
+				&kp LC(X)  &kp PSCRN  &kp F9  &kp SPACE
 			>;
 		};
 
@@ -25,8 +25,9 @@
 
 	combos {
 		compatible = "zmk,combos";
-		combo_bt: combo_bt { timeout-ms = <150>; key-positions = <3 4 5>; bindings = <&to 1>; };
 		combo_base: combo_base { timeout-ms = <150>; key-positions = <0 1 2>; bindings = <&to 0>; };
+        combo_bt: combo_bt { timeout-ms = <150>; key-positions = <3 4 5>; bindings = <&to 1>; };
 		combo_studio_unlock: combo_studio_unlock { timeout-ms = <150>; key-positions = <6 7>; bindings = <&studio_unlock>; };
 	};
 };
+
